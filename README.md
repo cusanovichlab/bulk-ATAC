@@ -21,7 +21,7 @@ do
 	base=$(basename ${file} _R1_001.fastq.gz)
 	fastq1=${base}_R1_001.fastq.gz
 	fastq2=${base}_R2_001.fastq.gz
-	sed "5 s/bATAC/$base/" /rsgrps/cusanovichlab/sbin/bulkATAC/bATAC_pipeline_single_job_mm.sh > /path/to/your/home/dir/${project_name}/bATAC_pipeline_${base}.sh
+	sed "5 s/bATAC/$base/" /rsgrps/cusanovichlab/sbin/git.repo/arrayPBS_bATAC/bATAC_pipeline_single_job_mm.sh > /path/to/your/home/dir/${project_name}/bATAC_pipeline_${base}.sh
 	sed -i "26 s/fastq1/$fastq1/2" /path/to/your/home/dir/${project_name}/bATAC_pipeline_${base}.sh
 	sed -i "27 s/fastq2/$fastq2/2" /path/to/your/home/dir/${project_name}/bATAC_pipeline_${base}.sh
 	sed -i "28 s/base/$base/2" /path/to/your/home/dir/${project_name}/bATAC_pipeline_${base}.sh
