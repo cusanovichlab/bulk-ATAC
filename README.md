@@ -21,7 +21,7 @@ Rscript=/path/to/your/output/dir
 # Genome size parameters for MACS2, see https://hbctraining.github.io/Intro-to-ChIPseq/lessons/05_peak_calling_macs.html for details
 genome=mm
 genome_dir=/dir/to/bowtie/genome/reference
-tss_bed=/bin/bed/mm10.v23.tss.bed.gz
+tss_bed=/bed/mm10.v23.tss.bed.gz
 fastq1=/dir/to/fastq/read1
 fastq2=/dir/to/fastq2/read2
 base=file_name_prefix
@@ -102,7 +102,7 @@ mkdir $OUTDIR/deeptools
 OUTDIR=$OUTDIR/deeptools
 bams=$OUTDIR/bams
 sample=glo2ko
-mm10_blacklist_sort=/bin/bed/mm10-blacklist.v2.sorted.bed
+mm10_blacklist_sort=/bed/mm10-blacklist.v2.sorted.bed
 ```
 #### Make directory
 ```
