@@ -11,8 +11,18 @@ macs2
 ```
 ### R packages needed to install.
 ```
-dplyr
+tidyverse
 reader
+limma
+edgeR
+RColorBrewer
+plyr
+pheatmap
+Signac
+grid
+gridExtra
+lattice
+UpSetR
 ```
 ### Before starting to run the pipeline, define the PATH or value for the variables below.
 ```
