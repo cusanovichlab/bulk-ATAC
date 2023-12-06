@@ -44,7 +44,7 @@ $OUTDIR/fastqs_trimmed/${base}_R2.fastq.paired.trimmed.gz $OUTDIR/fastqs_trimmed
 ILLUMINACLIP:Trimmomatic-0.36/adapters/NexteraPE-PE.fa:2:30:10:1:true \
 LEADING:3 TRAILING:3 SLIDINGWINDOW:4:10 MINLEN:20 2> $OUTDIR/reports/${base}_trimmomatic.log;
 ```
-#### Mapping reads and then filtering the mapped reads to only include the reads that were properly paired and confidently mapped to the assembled nuclear chromosomes (MAPQ ≥ 10).
+#### Map reads and then filter the mapped reads to only include the reads that were properly paired and confidently mapped to the assembled nuclear chromosomes (MAPQ ≥ 10).
 ```
 bowtie2 -p 8 -X 2000 -3 1 -x $genome_dir \
 -1 $OUTDIR/fastqs_trimmed/${base}_R1.fastq.paired.trimmed.gz \
