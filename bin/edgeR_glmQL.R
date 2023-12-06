@@ -130,12 +130,12 @@ pcaplot = ggplot(pcadf, aes(PC1, PC2, label = sample)) +
         legend.text = element_text(size=16),
         legend.title = element_text(size=16))
 
-message("Plot PCA..")
+message("Plot PCA...")
 pdf(file = paste0(output, "_pca_and_correlation.pdf"), width = 14, height = 5)
 grid.arrange(corplot[[4]], pcaplot, nrow = 1)
 dev.off()
 
-# plot PCA
+message("Plot QC data...")
 png(file = paste0(output, "_edger_qc.png"), width = 800, height = 800)
 par(mfrow=c(2,2))
 boxplot(unnorm, las=2, main="Unnormalized counts")
