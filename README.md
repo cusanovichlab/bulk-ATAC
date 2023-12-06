@@ -1,4 +1,4 @@
-# Bulk ATAC-seq pipeline using UofA HPC
+# Bulk ATAC-seq pipeline
 ## This pipeline aims to preprocess bulk ATAC-seq data, call peaks, and create a count matrix for differential analysis.
 ### Linux packages needed to install.
 ```
